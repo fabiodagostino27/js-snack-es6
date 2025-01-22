@@ -114,12 +114,17 @@ function randomNum(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
+let clubsAndFouls = []
+
 for (let i in arrayFootballClubs) {
     arrayFootballClubs[i].punti_fatti = randomNum(30, 90);
     arrayFootballClubs[i].falli_subiti = randomNum(60, 100);
+    clubsAndFouls.push(`${arrayFootballClubs[i].nome}, falli subiti: ${arrayFootballClubs[i].falli_subiti}`)
 }
 
 console.log(arrayFootballClubs)
+
+console.log(clubsAndFouls)
 
 
 
