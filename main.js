@@ -55,3 +55,60 @@ for (i = 0, k = i + 1; i < arrayBike.length; i++) {
 
 console.log(lightestBike)
 
+
+// Esercizio 2
+let arrayFootballClubs = [
+    {
+      "nome": "Juventus",
+      "punti_fatti": 0,
+      "falli_subiti": 0
+    },
+    {
+      "nome": "Inter Milan",
+      "punti_fatti": 0,
+      "falli_subiti": 0
+    },
+    {
+      "nome": "AC Milan",
+      "punti_fatti": 0,
+      "falli_subiti": 0
+    },
+    {
+      "nome": "AS Roma",
+      "punti_fatti": 0,
+      "falli_subiti": 0
+    },
+    {
+      "nome": "Napoli",
+      "punti_fatti": 0,
+      "falli_subiti": 0
+    },
+    {
+      "nome": "Lazio",
+      "punti_fatti": 0,
+      "falli_subiti": 0
+    },
+    {
+      "nome": "Fiorentina",
+      "punti_fatti": 0,
+      "falli_subiti": 0
+    },
+    {
+      "nome": "Atalanta",
+      "punti_fatti": 0,
+      "falli_subiti": 0
+    },
+    {
+      "nome": "Torino",
+      "punti_fatti": 0,
+      "falli_subiti": 0
+    },
+    {
+      "nome": "Bologna",
+      "punti_fatti": 0,
+      "falli_subiti": 0
+    }
+]
+
+
+
