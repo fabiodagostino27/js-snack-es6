@@ -30,7 +30,7 @@ let arrayBike = [
     },
     {
         "nome": "Orbea Orca OMX",
-        "peso": 6.7
+        "peso": 5.7
     },
     {
         "nome": "Scott Addict RC",
@@ -109,6 +109,18 @@ let arrayFootballClubs = [
       "falli_subiti": 0
     }
 ]
+
+function randomNum(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+for (let i in arrayFootballClubs) {
+    arrayFootballClubs[i].punti_fatti = randomNum(30, 90);
+    arrayFootballClubs[i].falli_subiti = randomNum(60, 100);
+}
+
+console.log(arrayFootballClubs)
+
 
 
 
