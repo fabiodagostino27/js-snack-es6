@@ -119,7 +119,12 @@ let clubsAndFouls = []
 for (let i in arrayFootballClubs) {
   arrayFootballClubs[i].punti_fatti = randomNum(30, 90);
   arrayFootballClubs[i].falli_subiti = randomNum(60, 100);
-  clubsAndFouls.push(`${arrayFootballClubs[i].nome}, falli subiti: ${arrayFootballClubs[i].falli_subiti}`)
+  clubsAndFouls.push(
+    {
+      nome: arrayFootballClubs[i].nome,
+      falli_subiti: arrayFootballClubs[i].falli_subiti
+    }
+  )
 }
 
 console.log(clubsAndFouls)
@@ -131,14 +136,16 @@ let arrayNames = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara']
 function returnBetween(arr, a, b) {
   let arrBetween = [];
 
-  for (i = a + 1; i < b; i++) {
-    arrBetween.push(arr[i]);
+  if (a < b && a >= 0 && b < arr.length) {
+    for (i = a + 1; i < b; i++) {
+      arrBetween.push(arr[i]);
+    }
   }
 
   return arrBetween
 }
 
-console.log(returnBetween(arrayNames, 0, 5))
+console.log(returnBetween(arrayNames, 1, 5))
 
 
 
